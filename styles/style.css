@@ -35,7 +35,7 @@ html {
   text-decoration: none;
 }
 
-.header__links-list-item_no-bullit{
+.header__links-list-item_no-bullit {
   list-style: none;
 }
 
@@ -140,7 +140,7 @@ html {
   margin-right: 50px;
 }
 
-.cover__button{
+.cover__button {
   background-color: transparent;
   text-transform: uppercase;
   display: flex;
