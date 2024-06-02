@@ -50,7 +50,7 @@ html {
 }
 
 .header__address {
-  width: 240px;
+  max-width: 240px;
   padding-top: 3px;
   font-size: 18px;
   line-height: 1.4;
@@ -69,8 +69,7 @@ html {
   background-color: #000000;
   opacity: 60%;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 3;
 } 
 
@@ -154,7 +153,7 @@ html {
 }
 
 .lots {
-  padding: 182px 24px 0 24px;
+  padding: 181px 24px 0 24px;
 }
 
 .lots__heading {
@@ -163,7 +162,7 @@ html {
   font-weight: 700;
   line-height: 46.96px;
   text-align: left;
-  margin: -1px 12px 1px 40px;   
+  margin: 0 12px 1px 40px;
 }
 /*  */
 .lots__cards-list {
@@ -197,26 +196,21 @@ html {
 
 .lots__card-list-item {
   list-style: none; /*убрать точки */
-  width: 334px;
+  max-width: 334px;
   flex-grow: 1;
+  min-height: 563px;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card {
@@ -226,7 +220,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  background-position: center;
+  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -246,7 +241,7 @@ html {
 
 .about__logo {
   display: block;
-  width: 240px;
+  max-width: 240px;
 }
 
 .about__logo-image {
@@ -257,7 +252,7 @@ html {
 .about__container {
   display: flex;
   flex-direction: column;
-  width: 693px;
+  max-width: 693px;
   height: 100%;
   margin-top: 133px;
   margin-bottom: 11px;
@@ -270,18 +265,14 @@ html {
   text-transform: uppercase;
 }
 
-.about__text-first {
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   margin-top: 101px;
-  margin-bottom: 25px;
-}
-
-.about__text-second {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .footer {
@@ -291,7 +282,7 @@ html {
 }
 
 .footer__address {
-  width: 240px;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
   padding-top: 1px;
@@ -310,10 +301,18 @@ html {
   text-underline-position: under;
 }
 
-.footer__social-list {
+.footer__menu-item_active .footer__menu-link {
+  text-decoration: none;
+}
+
+.footer__links-list-item_no-bullit {
+  list-style: none;
+}
+
+/* .footer__social-list {
   display: flex;
 
-}
+} не пригодилось)*/
   
 .footer__social-list-item {
   list-style: none;
