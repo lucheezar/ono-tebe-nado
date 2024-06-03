@@ -18,7 +18,6 @@ html {
 
 .header__menu-list {
   display: flex;
-  flex-direction: row;
   margin-left: 26.52px;
   gap: 32px;
   list-style: circle;
@@ -53,6 +52,7 @@ html {
   max-width: 240px;
   padding-top: 3px;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.4;
   text-underline-position: under;
 }
@@ -80,7 +80,7 @@ html {
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: -3;
+  z-index: 0;
   margin-top: 91px;
 }
 
@@ -103,12 +103,11 @@ html {
 
 .aligned-text_center {
   text-align: center;
-  margin-left: -33px;
+  margin-right: 34px;
 }
 
 .aligned-text_right {
   text-align: right;
-  margin-left: 50px;
 }
 
 .letter-spacing-extended {
@@ -131,8 +130,7 @@ html {
 .cover-text {
   display: block;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 12px;
+  word-spacing: 18px;
   color: #FFF;
   font-size: 22px;
   font-weight: 400;
@@ -161,10 +159,9 @@ html {
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
-  text-align: left;
   margin: 0 12px 1px 40px;
 }
-/*  */
+
 .lots__cards-list {
   display: flex;
   gap: 25px;
@@ -287,6 +284,7 @@ html {
   flex-direction: column;
   padding-top: 1px;
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
   text-underline-position: under;
@@ -308,17 +306,14 @@ html {
 .footer__links-list-item_no-bullit {
   list-style: none;
 }
-
-/* .footer__social-list {
-  display: flex;
-
-} не пригодилось)*/
   
 .footer__social-list-item {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  width: 240px;
+  max-width: 240px;
+  column-gap: 48px;
+  row-gap: 16px;
+  flex-wrap: wrap; 
 }
 
 
