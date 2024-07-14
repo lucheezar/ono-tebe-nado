@@ -149,6 +149,20 @@ html {
   font-weight: 500;
   padding: 12px 32px 11px 32px;
 }
+.cover__button:hover {
+text-decoration: underline;
+text-underline-position: under;
+}
+
+.cover__button:active {
+  background-color: #1b1919;
+}
+
+
+.cover__button:focus-visible {
+outline: #FFF 1px solid;
+outline-offset: 1px;
+}
 
 .lots {
   padding: 181px 24px 0 24px;
